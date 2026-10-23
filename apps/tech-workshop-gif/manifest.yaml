@@ -1,0 +1,6 @@
+id: tech-workshop-gif
+name: Tech Workshop GIF
+summary: Play a workshop GIF
+desc: Displays an animated GIF sized for a 192x64 panel.
+author: BJMcIntoshDotTech
+supports2x: true

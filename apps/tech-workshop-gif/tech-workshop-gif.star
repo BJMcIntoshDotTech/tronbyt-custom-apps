@@ -11,8 +11,11 @@ def main(config):
     if response.status_code != 200:
         fail("GIF request failed with HTTP status %d", response.status_code)
 
+    image = render.Image(src=response.body())
+
     return render.Root(
-        child=render.Image(src=response.body),
+        delay=image.delay,
+        child=image,
     )
 
 def get_schema():
